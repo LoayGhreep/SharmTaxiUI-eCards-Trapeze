@@ -530,7 +530,16 @@ class MainScreen extends StatelessWidget {
         Center(
           child: Ink(
             decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(0),
+              boxShadow: <BoxShadow>[
+                BoxShadow(
+                  color: Colors.black,
+                  blurStyle: BlurStyle.outer,
+                  blurRadius: 3,
+                  spreadRadius: 0.5,
+                  offset: Offset(0, 0),
+                ),
+              ],
+              borderRadius: BorderRadius.circular(4),
             ),
             child: SizedBox(
               height: 60,
@@ -566,6 +575,15 @@ class MainScreen extends StatelessWidget {
         Center(
           child: Ink(
             decoration: BoxDecoration(
+              boxShadow: <BoxShadow>[
+                BoxShadow(
+                  color: Colors.black,
+                  blurStyle: BlurStyle.outer,
+                  blurRadius: 3,
+                  spreadRadius: 0.5,
+                  offset: Offset(0, 0),
+                ),
+              ],
               borderRadius: BorderRadius.circular(4),
             ),
             child: SizedBox(
@@ -613,12 +631,12 @@ class MainScreen extends StatelessWidget {
         Icon(Icons.logout, shadows: iconshadow),
         Divider(),
         _headline('(6) In driver/Vehicle details (After the driver accepted)'),
-        _subheadline('(A) Show the vehicle plate number (Side number/plate)'),
+        _subheadline('(A) Show the vehicle plate number instead of the side number'),
         _subheadline('Example:'),
         FittedBox(
             fit: BoxFit.fitWidth,
             child: Text(
-              'ط ج ب 1234 (567)',
+              'ط ج ب 1234',
               style: TextStyle(
                 color: color2,
                 fontFamily: 'Poppins',
@@ -636,7 +654,7 @@ class MainScreen extends StatelessWidget {
         FittedBox(
             fit: BoxFit.fitWidth,
             child: Text(
-              'ط ج ب 1234 (567)',
+              'ط ج ب 1234',
               textDirection: TextDirection.rtl,
               style: TextStyle(
                 color: color2,
