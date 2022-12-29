@@ -4,7 +4,7 @@ UI Instructions handed over from [eCards](https://www.ecards.com.eg) to [Trapeze
 
 ![Alt text](https://github.com/trecktom/SharmTaxiUI-eCards-Trapeze/blob/main/ecards.png "eCards")
 
-## Fonts
+## Changes include the Intro Page
 
 # Demo
 
